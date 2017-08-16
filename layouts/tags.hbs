@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    
+    <meta name="keywords" content="{{ site.tags }}">
+    <meta name="author" content="{{{ site.author }}}">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">  
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+
+  <div id="container">
+
+    {{> header }}
+
+    <main >
+
+        <div class="contents">
+        <h1 style="margin:0;" > Tags: </h1>
+
+        <div id="tag_cloud">
+            
+            {{#each tagMap}}
+                <a href=#{{@key}} class="tag_button big_button" > {{@key}} | {{this.length}}</a> 
+            {{/each}}
+        </div>
+        <hr>
+
+            <div id="tag_map" class="markdown-body">
+            {{!-- https://stackoverflow.com/questions/9058774/handlebars-mustache-is-there-a-built-in-way-to-loop-through-the-properties-of --}}
+            {{#each tagMap}}
+                <div class="tag_map_item">
+                    <a name={{@key}} href=#{{@key}} >{{@key}} </a> 
+                    <ul>
+                    {{#each this}}
+                            <li>
+                                <h3> <a class="post-link" href="/{{this.path}}/">{{ this.title }}</a></h3>
+                            </li>
+                            {{!-- <li>{{@index}}: {{this.title}} </li> --}}
+                    {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+       
+
+    </main>
+
+    {{> footer }}
+  </div>
+</body>
+</html>

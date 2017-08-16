@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    
+    <meta name="keywords" content="{{ site.tags }}">
+    <meta name="author" content="{{{ site.author }}}">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">  
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+  <div id="container">
+    {{> header }}
+    <main>
+        <div class="contents">
+            {{#each (lookup collections collections_key)  }}
+                <div class="item">
+                    <span class="item_meta">{{formatDate this.date}}</span>
+                    <h2 class="item_title">
+                        <a class="post-link" href="/{{this.path}}/">{{ this.title }}</a>
+                    </h2>
+                    <div id="tag_buttons">
+                        {{tags_button this.tags "tag_button"}}
+                    </div>
+                </div>
+            {{/each}}
+        </div> 
+    </main>
+    {{> footer }}
+  </div>
+</body>
+
+</html>

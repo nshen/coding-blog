@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{{#if title}} {{title}} | {{/if}}{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    
+    <meta name="keywords" content="{{ site.tags }}">
+    <meta name="author" content="{{{ site.author }}}">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">  
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+
+  <div id="container">
+
+    {{> header }}
+
+    <main>
+      <div class="contents"> 
+        <div class="markdown-body">
+            {{{ contents }}}
+        </div>
+      </div>
+    </main>
+
+    {{> footer }}
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{{#if title}} {{title}} | {{/if}}{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{#if description}}{{description}}{{else}}{{ site.description }}{{/if}}">
+    
+    <meta name="keywords" content="{{ tags }}">
+    <meta name="author" content="{{{ site.author }}}">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">  
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+</head>
+
+<body>
+  <div id="container">
+    {{> header }}
+        <main >
+          <div class="contents" >
+            <div class="article_title">
+              <h1>{{ title }}</h1>
+            </div>
+            <div class="article_date">
+              <p>{{formatDate date}} </p>
+            </div>
+          
+            <div class="markdown-body markdown-contents">
+              {{{ contents }}}
+            </div>
+            
+            <div class="article_row">
+                {{tags_button this.tags "tag_button big_button"}}
+            </div>
+
+            <div class="article_row" >
+              <div class="social-share"></div>
+            </div>
+
+            <div id="pre_and_next" class="markdown-body" >
+              <div id="pre_link"> 
+                {{#if previous}}
+                    <a href="/{{ previous.path }}" ><span>&laquo;&nbsp;{{ previous.title }}</span></a>
+                  {{/if}} 
+              </div>
+              <div id="next_link"> 
+                {{#if next}}
+                    <a href="/{{ next.path }}"><span>{{ next.title }}&nbsp;&raquo;</span></a>
+                  {{/if}}
+              </div>
+            </div>
+
+          </div>
+
+        </main>
+    {{> footer }}
+  </div>
+
+  <script src="/assets/prism.js"></script>
+  <script src="/assets/social-share.min.js"></script>
+
+</body>
+
+</html>
