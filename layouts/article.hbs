@@ -28,14 +28,16 @@
             <div class="article_title">
               <h1>{{ title }}</h1>
             </div>
+ 
             <div class="article_date">
               <p>{{formatDate date}} </p>
             </div>
-          
+     
             <div class="markdown-body markdown-contents">
               {{{ contents }}}
+
+              本文采用 <a rel="license" style="color:#0366d6;" href="https://creativecommons.org/licenses/by-nd/4.0/deed.zh">署名-禁止演绎 4.0 国际许可协议 (CC BY-ND 4.0)</a> 进行许可（保留链接可任意转载，禁止修改）。
             </div>
-            
             <div class="article_row">
                 {{tags_button this.tags "tag_button big_button"}}
             </div>
@@ -44,6 +46,50 @@
               <div class="social-share"></div>
             </div>
 
+            {{!-- 留言板 --}}
+            <div class="article_row">
+             <p>留言系统需要代理访问</p>
+            </div>
+            {{!-- 广告 --}}
+            <div class="article_row">
+              <div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- 2017blogarticle -->
+                  <ins class="adsbygoogle"
+                  style="display:block"
+                  data-ad-client="ca-pub-3527087615346771"
+                  data-ad-slot="2049652650"
+                  data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+            </div>
+            {{!-- 广告 --}}
+
+            <div>
+             <div id="disqus_thread"></div>
+              <script>
+
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              
+              var disqus_config = function () {
+              this.page.url = "{{site.url}}{{path}}"
+              this.page.identifier = "{{ identifier }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://nshen-net.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+{{!-- 留言板 --}}
             <div id="pre_and_next" class="markdown-body" >
               <div id="pre_link"> 
                 {{#if previous}}

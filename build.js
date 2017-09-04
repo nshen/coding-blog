@@ -108,9 +108,9 @@ function tags() {
 
 const config = {
 
-    title: "CodingBlog",
-    description: "一个程序员专用的私房极简静态博客系统",
-    tags: "独立博客，静态博客，Markdown博客",
+    title: "N神的研究所",
+    description: "N神的个人站点，通常发布一些个人笔记和业余项目等。",
+    tags: "独立博客，前端开发，游戏开发，HTML5游戏开发，Flash游戏开发，Unity游戏开发",
     author: "Nshen <nshen121@gmail.com>",
     url: "http://nshen.net/",
     updated: new Date().toISOString(),

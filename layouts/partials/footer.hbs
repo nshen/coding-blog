@@ -1,6 +1,28 @@
 <footer id="footer">
     <div class="center">
-        <p>&copy; 2004-2017 Nshen.net | <a href="/atom.xml" target="blank">Feed</a> | <a href="/sitemap.xml" target="blank">Sitemap</a> | <a href="/tags" target="blank">Tags</a></p>
+        <p>&copy; 2004-2017 Nshen.net | <a href="/atom.xml" target="blank">Feed</a> | <a href="/sitemap.xml" target="blank">Sitemap</a> | <a href="/tags" target="blank">Tags</a> | <a href="/support">Support</a></p>
         <p>本站由 <a href="https://github.com/nshen/coding-blog" target="blank">CodingBlog</a> 强力构建，最后生成于 {{ site.buildTime }} 。</p>
+        <p>免费托管于 coding.net</p>
+        <p><a href="http://coding.net" target="blank"><img src="/image/codingnet2.png" style="width:250px;height:80px;" /></a></p>
     </div>
+
+    {{!-- 百度统计 --}}
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e1acab9c095adb812998c18d06d414ea";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+
+        //主动推送
+        (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    {{!-- 百度统计 --}}
 </footer>

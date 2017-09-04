@@ -1,7 +1,7 @@
 {
-    "name": "coding-blog",
+    "name": "nshen-net",
     "version": "1.0.0",
-    "description": "一个程序员专用的私房极简静态博客系统",
+    "description": "N神的AS研究所",
     "main": "build.js",
     "scripts": {
         "build": "node build.js",
