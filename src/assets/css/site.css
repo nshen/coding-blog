@@ -192,12 +192,12 @@ footer p {
 }
 
 .article_row {
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
 
 .markdown-body.markdown-contents {
-    padding: 30px 0;
+    padding: 30px 0 20px 0;
     border-bottom: 1px solid #eee;
 }
 
