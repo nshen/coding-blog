@@ -13,7 +13,7 @@ Git已经是最流行的版本控制系统了，网上相关的免费学习资�
 * <a href="http://progit.org/book/zh/" target="_blank">Pro Git 中文版 </a>
 * <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/" target="_blank">Git Magic 中文版 </a>
 
-但我是买的一本纸质书叫做《版本控制之道--使用Git》，下边是我记录的几乎是整本书讲过的所有命令，方便以后查阅。
+但我是买的一本纸质书叫做《版本控制之道--使用Git》，下边是我记录的几乎是整本书讲过的所有命令，后期又添加了点其他内容，方便以后查阅。
 
 <!-- more -->
 
@@ -24,8 +24,11 @@ git config --global user.name "Nshen" # 必须
 git config --global user.email "nshen121@gmail.com" # 必须
 git config --global color.ui "always"
 # 或者"auto", always不仅Base环境是彩色，Dos里也是彩色的。
+git config --global core.autocrlf input
+# autocrlf 设置为 true 时会让 windows 下 push 代码时自动将 CRLF 转换为 LF ，并在 pull 代码时再转换回 CRLF
+# 但如果你的编辑器已经支持 LF 了就不需要 pull 时再转回 CRLF 了，只要保证 push 时都是 LF 即可，所以要把 autocrlf 设置为 input
 
-git config --global core.editor notepad.exe # 设为windows记事本，不常用
+git config --global core.editor notepad.exe # 修改commit工具为windows记事本，不常用
 git config --global alias.ci "commit" # 别名缩写，不常用
 git config --global merge.tool # 可以设置合并工具，不常用
 git config --global --list # 查看设置
