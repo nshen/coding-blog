@@ -20,6 +20,7 @@ Git已经是最流行的版本控制系统了，网上相关的免费学习资�
 ## 设置
 
 ```bash
+git config --global --list # 查看所有设置
 git config --global user.name "Nshen" # 必须
 git config --global user.email "nshen121@gmail.com" # 必须
 git config --global color.ui "always"
@@ -31,7 +32,12 @@ git config --global core.autocrlf input
 git config --global core.editor notepad.exe # 修改commit工具为windows记事本，不常用
 git config --global alias.ci "commit" # 别名缩写，不常用
 git config --global merge.tool # 可以设置合并工具，不常用
-git config --global --list # 查看设置
+
+# 设置代理，只能http和https协议，git和ssh设置比较麻烦。
+git config --global https.proxy 127.0.0.1:1080
+git config --global https.proxy 127.0.0.1:1080
+git config --global --unset http.proxy # 取消代理
+git config --global --unset https.proxy # 取消https代理
 
 ```
 
