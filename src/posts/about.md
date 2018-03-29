@@ -10,6 +10,7 @@ layout: blank.hbs
 
 ## 联系我：
 
+* [Telegram](https://t.me/nshen121)
 * QQ: 5836211
 * 邮箱：nshen121(at)gmail(dot)com
 * [nshen@Github](http://github.com/nshen)

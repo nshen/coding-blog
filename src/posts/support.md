@@ -5,6 +5,7 @@ layout: blank.hbs
 # 有多种方式可以支持到我
 
 * 找我聊聊，给我介绍一份工作（ [联系方式](/about) ）
+* Ether 打赏: 0xb3d5E34C7Add24279a8231c7e2e097465e5A6e83
 
 * [通过此链接购买搬瓦工](https://bandwagonhost.com/aff.php?aff=12734)
 
