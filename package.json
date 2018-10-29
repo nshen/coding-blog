@@ -4,7 +4,8 @@
     "description": "一个程序员专用的私房极简静态博客系统",
     "main": "build.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "node build.js",
+        "start": "node build.js && http-server ./build -o"
     },
     "author": "nshen <nshen121@gmail.com>",
     "license": "MIT",
@@ -25,5 +26,8 @@
         "metalsmith-static": "0.0.5",
         "moment": "^2.18.1",
         "slug": "^0.9.1"
+    },
+    "devDependencies": {
+        "http-server": "^0.11.1"
     }
 }
