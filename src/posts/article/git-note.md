@@ -266,20 +266,24 @@ git commit -m "revert head and 54efhds"
 ### 在当前分支末梢建立分支：
 
 ```bash
-git branch RB_1.0（建立分支不会自动切换过去）
+git branch RB_1.0 #（建立分支不会自动切换过去）
 ```
 
 ### 切换分支：
 
 ```bash
-git checkout RB_1.0（切换到RB_1.0分支）
+git checkout #RB_1.0（切换到RB_1.0分支）
 ```
 
 ### 创建并切换分支：
 
 ```bash
-git checkout -b RB_1.0（简化上边2步操作）
+git checkout -b RB_1.0  #（简化上边2步操作）
+
+git checkout -b dev origin/dev # 创建分支并且跟踪远程分支
 ```
+
+
 
 ### 删除分支：
 
