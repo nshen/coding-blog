@@ -4,21 +4,20 @@ layout: blank.hbs
 ---
 # 关于我
 
-我是一个非科班自学程序员，做Flash相关技术已有10多个年头了，曾混迹于北京和上海，现回沈阳老家，无业中。。。
+我是一个非科班全自学程序员，曾做 `flash developer` 有10多个年头，目前游荡在 `游戏开发`，`Web前端`，`Node后端`，及各种`全栈`技术中，曾混迹于`北京`和`上海`，现在老家 `沈阳`，无稳定工作。
 
 [--> 支持我](/support/)
 
 ## 联系我：
 
-* [Telegram](https://t.me/nshen121)
-* QQ: 5836211
-* 邮箱：nshen121(at)gmail(dot)com
-* [nshen@Github](http://github.com/nshen)
-* [nshen121@新浪微博](http://www.weibo.com/nshen121)
+* 微信：`nshen121`
+* 邮箱：`nshen121(at)gmail(dot)com`
+* QQ:  `5836211`
+* [@Github](http://github.com/nshen)
 
 ## 关于本站
 
-本站是我的个人博客，算是在我正式开始学习ActionScript时建立的（2004年06月02日），用于记录和分享一些Flash的学习过程，曾经有几百篇日志。但在经历过n个博客程序后，我决定改成基于hexo的静态博客，丢掉了大部分无意义的内容，仅保留几篇并用Markdown重新排了版。未来会继续记录我的学习历程，但不会局限于Flash啦。
+本站是我的个人博客，算是在我正式开始学习 `ActionScript` 时建立的（2004年06月02日），用于记录和分享一些 `Flash` 的学习过程，曾经有几百篇日志。但在经历过n多个博客程序后，我决定自己写了[ coding-blog 静态博客系统](https://github.com/nshen/coding-blog)，丢掉了大部分无意义的内容，仅保留几篇并用 `Markdown` 重新排了版。未来会继续记录我的学习历程，但不会局限于`Flash`啦。
 
 2017-08-14
 
