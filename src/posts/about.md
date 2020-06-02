@@ -4,9 +4,7 @@ layout: blank.hbs
 ---
 # 关于我
 
-我是一个非科班全自学程序员，曾做`flash developer`有10多个年头，目前专注在`游戏开发`，`Web前端`，`Node后端`，及各种`全栈`技术中，曾混迹于`北京`和`上海`，现在老家`沈阳`，无稳定工作。
-
-[--> 支持我](/support/)
+我是一个非科班全自学程序员，曾做 `flash developer` 有10多个年头，目前在 `游戏开发`，`Web前端`，`Node后端`，及各种`全栈`技术里游荡，曾混迹于`北京`和`上海`，现在老家`沈阳`，已逃离北上广6年多，无稳定工作，求发展。
 
 ## 联系我：
 
@@ -14,6 +12,8 @@ layout: blank.hbs
 * 邮箱：`nshen121(at)gmail(dot)com`
 * QQ:  `5836211`
 * Github: [@github.com/nshen](https://github.com/nshen)
+
+[--> 支持我](/support/)
 
 ## 关于本站
 
