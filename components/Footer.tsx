@@ -1,10 +1,9 @@
 import React from 'react'
 
-type FooterProps = {}
 
-const Footer = (props: FooterProps) => {
+const Footer = () => {
   return (
-    <footer className="text-center p-4 leading-8">
+    <footer className="text-center py-20 leading-10 tracking-wider font-thin  text-gray-800">
       <p>
         © 2004-2017 Nshen.net |{" "}
         <a href="/atom.xml" target="blank">

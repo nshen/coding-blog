@@ -14,8 +14,8 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
-        <div className="flex flex-col justify-between h-screen container max-w-5xl px-8 mx-auto">
+      <body className="overflow-y-scroll bg-gray-50">
+        <div className=" flex flex-col h-screen w-full container max-w-5xl px-12 mx-auto">
           <Header />
           {children}
           <Footer />
