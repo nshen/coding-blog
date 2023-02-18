@@ -1,0 +1,285 @@
+---
+title: CodingBlogV2 Blog Test
+date: 2023-01-26
+tags: ["Markdown", "文档"]
+description: 这是一篇介绍CodingBlogV2的文章
+---
+
+
+# 我展示的是一级标题
+
+akfjdslfjslkdfj1
+
+## 我展示的是二级标题
+
+Typography.js
+
+A powerful toolkit for building websites with beautiful design.
+
+Install
+
+npm install typography
+
+Demo/playground
+
+http://kyleamathews.github.io/typography.js
+
+Why
+
+Typography is a complex system of interrelated styles. 100s of style declarations on dozens of elements must be in harmonious order. Trying one design change can mean making dozens of tedious recalculations and CSS value changes. Creating new Typography themes with CSS feels hard.
+
+# 一级标题
+
+## 二级标题
+
+### 三级标题
+
+#### 四级标题
+
+##### 五级标题
+
+###### 六级标题
+
+## 文本样式
+
+```
+*斜体文本*
+
+_斜体文本_
+
+**粗体文本**
+
+__粗体文本__
+
+***粗斜体文本***
+
+~~BAIDU.COM~~
+```
+
+_斜体文本_
+
+_斜体文本_
+
+**粗体文本**
+
+**粗体文本**
+
+**_粗斜体文本_**
+
+~~BAIDU.COM~~
+
+**_粗斜体文本_**
+
+## 代码
+
+```js
+function myFunction() {
+  const iterable = [10, 20, 30];
+  for (const value of iterable) {
+    console.log(value);
+  }
+}
+```
+
+haskell
+
+```haskell
+
+module Main where
+main = putStrLn "Hello, World!"
+```
+
+html
+
+```html
+<html>
+<body>
+<main> Hello World !<main>
+</body>
+</html>
+```
+
+## 列表展示:
+
+- 第一栏
+  - 子列表 1
+  - 子列表 2
+- 第 2 栏
+- 第 3 栏
+- 第 4 栏
+- 第 5 栏
+
+1. 第一项：
+   - 第一项嵌套的第一个元素
+   - 第一项嵌套的第二个元素
+2. 第二项：
+   - 第二项嵌套的第一个元素
+   - 第二项嵌套的第二个元素
+
+## 嵌套
+
+> 最外层
+>
+> > 第一层嵌套
+> >
+> > > 第二层嵌套
+
+- 第一项
+  > 菜鸟教程
+  > 学的不仅是技术更是梦想
+- 第二项
+
+## 插入图片：
+
+![metalsmith](/images/codinglog/metalsmith.png)
+
+## 引用
+
+    哈哈哈哈哈哈哈！
+
+[Metalsmith](http://www.metalsmith.io/) 是一个基于插件的文档生成器，本身基本不做任何事，只遍历文件夹中的文件，并把他们交给插件来处理，处理完再存成新文件。一般建站常见的任务，已有无数的第三方插件可以帮你做，比如需要`markdown`就有`metalsmith-markdown`插件，需要`sitemap`就有对应的`metalsmith-sitemap`插件，也可以自定义插件加入构建流。
+
+## 代码高亮
+
+```javascript {1,2,3-4}
+function Greeter(greeting) {
+  this.greeting = greeting;
+}
+
+Greeter.prototype.greet = function () {
+  return "Hello, " + this.greeting;
+};
+
+// Oops, we're passing an object when we want a string. This will print
+// "Hello, [object Object]" instead of "Hello, world" without error.
+let greeter = new Greeter({ message: "world" });
+```
+
+第 6 行代码高亮，谢谢
+
+```javascript {6}
+function Greeter(greeting) {
+    this.greeting = greeting;
+}
+
+Greeter.prototype.greet = function() {
+    return "Hello, " + this.greeting; //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb
+}
+
+// Oops, we're passing an object when we want a string. This will print
+// "Hello, [object Object]" instead of "Hello, world" without error.
+let greeter = new Greeter({message: "world"});
+
+function Greeter(greeting) {
+    this.greeting = greeting;
+}
+
+Greeter.prototype.greet = function() {
+    return "Hello, " + this.greeting; aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+}
+
+// Oops, we're passing an object when we want a string. This will print
+// "Hello, [object Object]" instead of "Hello, world" without error.
+let greeter = new Greeter({message: "world"});unction Greeter(greeting) {
+    this.greeting = greeting;
+}
+
+Greeter.prototype.greet = function() {
+    return "Hello, " + this.greeting; aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+}
+
+// Oops, we're passing an object when we want a string. This will print
+// "Hello, [object Object]" instead of "Hello, world" without error.
+let greeter = new Greeter({message: "world"});
+```
+
+## 搜索引擎友好
+
+如果你不是个明星程序员，那么注定流量大部分来自于搜索引擎，所以千万不要忽略 SEO 的重要性
+
+下边是一篇 `Markdown` 博客开头加入的 `YAML`
+
+```yaml
+---
+title: CodingBlog：给程序员的私房极简博客系统
+date: 2017-09-01
+tags: Markdown,文档
+description: 这是一篇介绍CodingBlog博客是如何实现的文章
+---
+```
+
+我希望生成对应的 HTML 是这样的，博客的 `tag` ，正好对应搜索引擎需要的 `keywords`
+
+```html
+<title>CodingBlog：给程序员的私房极简博客系统 | CodingBlog</title>
+<meta name="description" content="这是一篇介绍CodingBlog博客是如何实现的文章" />
+<meta name="keywords" content="Markdown,文档" />
+<meta name="author" content="Nshen <nshen121@gmail.com>" />
+```
+
+然后 Sitemap 和 feed 也是少不了的。
+
+## 响应式，1080p 优先
+
+## 与 git 配合替代云笔记或 wiki
+
+    myblog
+      |
+      |----- build/  // 生成的网站目录
+      |----- src/    // markdown文章目录
+      |----- note/   // 私密目录
+
+`myblog` 是整个博客程序的目录，可以整个把这个目录 git 同步到一个免费的私有库中，但会`.gitignore`过滤掉`build`目录。
+
+`build`目录就是生成的整个网站，我使用 chrome 的插件 [web-server-chrome](https://github.com/kzahel/web-server-chrome) 绑定在这个目录，就可以直接在本地 chrome 中预览生成的网站了
+
+![web-server-chrome](/images/codinglog/server.png)
+
+同时，这个`build`目录也是一个`git`目录，同步在 public 的`Github Pages` 或 `Coding Pages` 上，进入该目录，`push` 一下，就直接传到外网了，别人就可以访问了，超级方便。
+
+`src` 目录则是所有博客`.md`文件放的地方，如果我要写博客，直接用`VSCode`打开这个目录，这个目录里的子目录就是博客的分类，在相应的子目录里新建一个`.md`文件就可以写了，而且用`VSCode`打开`src`目录，会非常干净，不会误操作目录外的其他文件。
+
+`note` 目录是草稿或者是代替云笔记或 wiki 的**私密目录**的目录，在里边的文件不会 build 到最终网站上。但会随着我们的私有库进行版本管理，就跟云笔记一样了。如果草稿完成，可以手动移到`src`目录里，生成一篇日志或生成一篇独立类似 wiki 的网页。
+
+## 分类与 tags
+
+我根据个人的需求，默认将内容分为两类，**article** 和 **project** （其实就是两个文件夹），article 分类下可以放一些学习或读书笔记，project 分类下可以放一些我做的小项目。
+
+其他详细的类别，全部通过加 `tag` 的方式实现，比如 `JavaScript` 相关的文章可以加 `JavaScript` 的 `tag`
+
+之后访问下边的链接，会列出所有带`JavaScript`标签的内容
+
+> http://nshen.net/tags/#JavaScript
+
+## 总结
+
+[CodingBlog](https://github.com/nshen/coding-blog)
+
+## GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| Column1 | Column2 | Column3 | Column4 |
+| ------- | ------- | ------- | ------- |
+| Item1.1 | Item2.1 | Item3.1 | Item4.1 |
+| Item1.2 | Item2.2 | Item3.2 | Item4.2 |
+| Item1.3 | Item2.3 | Item3.3 | Item4.3 |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
