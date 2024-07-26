@@ -1,8 +1,6 @@
 # CodingBlog 程序员的私房极简博客系统
 
-极简静态博客系统[（简介和演示在此）](http://nshen.net/project/2017-09-04/new-blog/)
-
-
+极简静态博客系统[（简介和演示在此）](https://nshen.github.io/project/2017-09-04/new-blog/)
 
 
 ## 安装方法
